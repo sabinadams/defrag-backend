@@ -27,7 +27,7 @@ WORKDIR $BUILD_DIR
 # Copy file system
 COPY ./app/ ${APP_DIR}/
 COPY ./build/ ${BUILD_DIR}/
-RUN ls -la ${BUILD_DIR}
+RUN ls -la ${BUILD_DIR}/util/
 RUN chmod +x $BUILD_DIR/*.sh
 
 # Commandbox Installation

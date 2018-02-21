@@ -1,0 +1,29 @@
+version: '2.1'
+
+services:
+
+  app:
+    image: ortussolutions/commandbox
+    environment:
+      cfconfig_adminPassword: testing
+    volumes: 
+      - ./app:/app
+      - ./build:/root/build
+    ports:
+      - "8080:8080"
+    links:
+      - "mysql:mysqldb"
+    depends_on:
+      mysql:
+          condition: service_healthy
+
+  mysql:
+    image: mysql:latest  
+    environment:
+      MYSQL_ROOT_PASSWORD: "798140Sa"
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+    healthcheck:
+            test: "exit 0"
+    ports:
+      - "7981:3306"

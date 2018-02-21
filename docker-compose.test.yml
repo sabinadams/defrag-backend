@@ -1,0 +1,10 @@
+sut:
+  environment:
+    IMAGE_TESTING_IN_PROGRESS: "true"
+  build: .
+  dockerfile: "./${BUILD_IMAGE_DOCKERFILE}"
+  command: /root/build/test.sh
+  #Mount our test directory ( and our build directory to make local testing easier )
+  volumes: 
+    - ./test:/app
+    - ./build:/root/build

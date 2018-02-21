@@ -11,5 +11,6 @@
             "enable": true
         }
     },
-    "openbrowser": "true"
+    "openbrowser": "true",
+    "cfconfigfile": "./cfconfig.json"
 }

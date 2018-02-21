@@ -141,7 +141,6 @@ fi
 # We need to do this all on one line because escaped line breaks 
 # aren't picked up correctly by CommandBox on this base image ( JIRA:COMMANDBOX-598 )
 box server start cfengine=${CFENGINE} serverHomeDirectory=${SERVER_HOME_DIRECTORY} host=0.0.0.0 openbrowser=false port=${PORT} sslPort=${SSL_PORT} saveSettings=false
-box cfconfig datasource save name=defrag dbdriver=mysql host=mysqldb port=3306 database=defrag username=root password=798140Sa
 
 # Sleep until server is ready for traffic
 echo "INFO: Waiting for server to become available..."

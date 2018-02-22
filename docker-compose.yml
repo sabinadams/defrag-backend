@@ -6,6 +6,7 @@ services:
     image: ortussolutions/commandbox
     environment:
       cfconfig_adminPassword: testing
+      BOX_INSTALL: "true"
     volumes: 
       - ./app:/app
       - ./build:/root/build

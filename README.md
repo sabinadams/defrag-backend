@@ -26,6 +26,7 @@ VSCode: https://code.visualstudio.com/
 
 ## Current Tech (Frameworks, Languages, Tools, etc...)
 ![Lucee Logo](https://avatars0.githubusercontent.com/u/10973141?v=3&s=400)
+![Taffy Logo](http://docs.taffy.io/assets/taffy-logo-large.png)
 ![CommandBox Logo](https://www.ortussolutions.com/__media/commandbox-185-logo.png)
 ![TestBox Logo](http://www.tavanpouya.com/img/trr.png)
 ![ForgeBox Logo](https://www.ortussolutions.com/__media/ForgeBox300.png)

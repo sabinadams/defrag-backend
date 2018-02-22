@@ -33,7 +33,7 @@
     },
     "devDependencies":{},
     "installPaths":{
-        "Taffy":"Taffy",
+        "Taffy":"Taffy/",
         "dao":"com/database/",
         "testbox":"testbox/"
     },

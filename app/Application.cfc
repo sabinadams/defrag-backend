@@ -5,7 +5,7 @@ component extends='taffy.core.api' {
     this.datasource = 'defrag';
 
     // File Includes
-    include '/includes/app_configuration.cfm';
+    include '/mixins/app_configuration.cfm';
 
     //Taffy Framework configuration
 	variables.framework = getTaffyConfig();

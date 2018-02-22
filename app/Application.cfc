@@ -10,11 +10,6 @@ component extends='taffy.core.api' {
     //Taffy Framework configuration
 	variables.framework = getTaffyConfig();
 
-    // Called by Taffy to set up the 'environments' key in variables.framework (needs to be here)
-    public function getEnvironment() { 
-        return cgi.server_name == 'localhost' ? 'development' : 'production'; 
-    }
-
     // Application Environment Setup and Data Loading
     public function onApplicationStart() {
         

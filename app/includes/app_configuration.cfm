@@ -7,7 +7,9 @@
         // Creates global services
         application.auth = new services.authService();
         // Whitelisted Routes
-        application.whitelist = [];
+        application.whitelist = [
+            '/env'
+        ];
         // Sets a "dev-mode indicator"
         application.isDev = cgi.server_name == 'localhost';
         // Defines status codes
@@ -34,15 +36,22 @@
         return  {
             reloadKey = 'reboot',
             reloadPassword = 'makeithappen',
-            disableDashboard = true, //Change this to true to disable the Taffy Dashboard 
             disabledDashboardRedirect = '/',
             debugKey = 'debugonly', 
             environments = {
                 development: {
                     disableDashboard = false
+                },
+                production: {
+                    disableDashbaord = true
                 }
             }
         };
+    }
+
+    // Called by Taffy to set up the 'environments' key in variables.framework (needs to be here)
+    public function getEnvironment() {
+        return cgi.server_name == 'localhost' ? 'development' : 'production'; 
     }
 
 </cfscript>

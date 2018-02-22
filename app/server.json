@@ -1,7 +1,7 @@
 {
     "openBrowserURL": "http://localhost:8080",
     "app": {
-        "cfengine": "lucee@4"
+        "cfengine": "lucee@5"
     },
     "web": {
         "http": {

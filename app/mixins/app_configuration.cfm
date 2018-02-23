@@ -38,6 +38,10 @@
             reloadPassword = 'makeithappen',
             disabledDashboardRedirect = '/',
             debugKey = 'debugonly', 
+            docs = {
+                apiName = "Defrag Server",
+                apiVersion = "1.0.0"
+            },
             environments = {
                 development: {
                     disableDashboard = false
